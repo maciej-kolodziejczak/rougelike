@@ -1,16 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7f12adfd-d01f-4959-93cb-25c1484a0d0a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameEventListener.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameEventListener.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TestEvent.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TestEvent.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rougelike/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rougelike/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rougelike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rougelike/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Breakables/Box/Box.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Breakables/Box/Box.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Level Objects/Spikes.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Level Objects/Spikes.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pickups/Health Pickup 3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pickups/Health Pickup 3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pickups/Health Pickup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pickups/Health Pickup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player Bullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Breakable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Breakable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthPickup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthPickup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerBullet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Udemy Roguelike/Font/Pixelnauts.ttf.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Udemy Roguelike/Font/Pixelnauts.ttf.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerHealthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerHealthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_0.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_0.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_10.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_10.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_11.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_11.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_12.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_12.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_13.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_13.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_14.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_14.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_15.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_15.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_16.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_16.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_17.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_17.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_18.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_18.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_19.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_19.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_20.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_20.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_21.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_21.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_22.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_22.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_23.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_23.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_24.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_24.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_25.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_25.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_26.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_26.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_27.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_27.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_28.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_28.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_29.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_29.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_30.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_30.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_31.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_31.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_32.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_32.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_33.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_33.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_34.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_34.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_35.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_35.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_36.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_36.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_37.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_37.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_38.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_38.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_39.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_39.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_40.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_40.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_41.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_41.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_42.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_42.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_43.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_43.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_44.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_44.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_45.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_45.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_46.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_46.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_47.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_47.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_48.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_48.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_49.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_49.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_5.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_5.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_50.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_50.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_51.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_51.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_52.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_52.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_53.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_53.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_54.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_54.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_55.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_55.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_56.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_56.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_57.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_57.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_58.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_58.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_59.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_59.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_6.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_6.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_60.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_60.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_61.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_61.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_62.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_62.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_63.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_63.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_7.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_7.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_8.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_8.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_9.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon 1 Tiles_9.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemaps/Dungeon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,15 +184,48 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameEventListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthPickup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealthController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Breakable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character.cs" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1lQgMAi8JT4SatHCZyUccxm77tv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -60,6 +257,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607534680602</updated>
       <workItem from="1607534686023" duration="399000" />
+      <workItem from="1607610843969" duration="4577000" />
     </task>
     <servers />
   </component>
@@ -68,7 +266,19 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

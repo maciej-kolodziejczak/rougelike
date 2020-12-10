@@ -63,6 +63,7 @@ public class EnemyController : MonoBehaviour
             if (fireCounter <= 0)
             {
                 fireCounter = fireRate;
+                AudioManager.Instance.PlaySfx(13);
                 Instantiate(bullet, firePoint.position, firePoint.rotation);
             }
         }
@@ -71,9 +72,12 @@ public class EnemyController : MonoBehaviour
     public void Damage(int damage)
     {
         health -= damage;
+        AudioManager.Instance.PlaySfx(2);
+        
         if (health <= 0)
         {
             Instantiate(dieEffect, transform.position, transform.rotation);
+            AudioManager.Instance.PlaySfx(1);
             Destroy(gameObject);
         }
     }

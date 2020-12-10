@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 166078876645902406}
   - component: {fileID: 166078876645902407}
   - component: {fileID: 166078876645902404}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Health Pickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healAmount: 1
+  collectTimeout: 0.5
 --- !u!61 &166078876645902404
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ public class PlayerHealthController : MonoBehaviour
 {
     public static PlayerHealthController instance;
 
+    [SerializeField] private GameEvent @event;
+
     [SerializeField] int maxHealth;
     [SerializeField] int currentHealth;
     [SerializeField] GameObject dieEffect;
@@ -48,12 +50,16 @@ public class PlayerHealthController : MonoBehaviour
 
         currentHealth--;
         SetHealthUI();
+        AudioManager.Instance.PlaySfx(11);
 
         if (currentHealth <= 0)
         {
             Instantiate(dieEffect, transform.position, transform.rotation);
             UIController.instance.deathScreen.gameObject.SetActive(true);
             PlayerController.instance.gameObject.SetActive(false);
+            AudioManager.Instance.PlayGameOver();
+            AudioManager.Instance.PlaySfx(8);
+            // @event.Raise();
         }
     }
 

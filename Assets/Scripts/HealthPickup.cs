@@ -20,6 +20,7 @@ public class HealthPickup : MonoBehaviour
         if (collision.CompareTag("Player") && collectTimeout <= 0)
         {
             PlayerHealthController.instance.Heal(healAmount);
+            AudioManager.Instance.PlaySfx(7);
             Destroy(gameObject);
         }
     }

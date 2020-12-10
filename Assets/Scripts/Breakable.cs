@@ -21,20 +21,32 @@ public class Breakable : MonoBehaviour
             if (PlayerController.instance.dashCounter <= 0)
                 return;
 
-            Destroy(gameObject);
-
-            // break element
-            int piecesCount = UnityEngine.Random.Range(minPieces, maxPieces);
-            
-            for (int i = 0; i < piecesCount; i += 1)
-            {
-                GameObject piece = pieces[i];
-                Instantiate(piece, transform.position, transform.rotation);
-            }
-
-            // drop items
-            DropItems();
+            Smash();
         }
+
+        if (collision.CompareTag("FriendlyProjectile"))
+        {
+            Smash();
+        }
+    }
+
+    private void Smash()
+    {
+        Destroy(gameObject);
+
+        AudioManager.Instance.PlaySfx(0);
+
+        // break element
+        int piecesCount = UnityEngine.Random.Range(minPieces, maxPieces);
+
+        for (int i = 0; i < piecesCount; i += 1)
+        {
+            GameObject piece = pieces[i];
+            Instantiate(piece, transform.position, transform.rotation);
+        }
+
+        // drop items
+        DropItems();
     }
 
     private void DropItems()
