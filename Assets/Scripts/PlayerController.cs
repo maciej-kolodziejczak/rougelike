@@ -1,45 +1,1 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PlayerController : MonoBehaviour
-{
-    [SerializeField] float moveSpeed;
-    [SerializeField] Rigidbody2D rbody;
-    [SerializeField] Transform gun;
-
-    private Vector2 moveInput;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        moveInput.x = Input.GetAxisRaw("Horizontal");
-        moveInput.y = Input.GetAxisRaw("Vertical");
-
-        rbody.velocity = moveInput * moveSpeed;
-
-        Vector3 mousePos = Input.mousePosition;
-        Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.localPosition);
-
-        if (mousePos.x < screenPos.x)
-        {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
-            gun.localScale = new Vector3(-1f, -1f, 1f);
-        } else
-        {
-            transform.localScale = Vector3.one;
-            gun.localScale = Vector3.one;
-        }
-
-        Vector2 offset = new Vector2(mousePos.x - screenPos.x, mousePos.y - screenPos.y);
-        float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
-
-        gun.rotation = Quaternion.Euler(0, 0, angle);
-    }
-}
+﻿using System.Collections;using System.Collections.Generic;using UnityEngine;public class PlayerController : MonoBehaviour{    public static PlayerController instance;    [SerializeField] Rigidbody2D rbody;    [SerializeField] Transform gun;    [SerializeField] Animator animator;    [SerializeField] public SpriteRenderer body;    [Header("Movement")]    [SerializeField] float moveSpeed = 5f;    [SerializeField] float dashSpeed = 8f;    [SerializeField] float dashTime = .5f;    [SerializeField] float dashCooldown = 1f;    [Header("Shooting")]    [SerializeField] GameObject bullet;    [SerializeField] Transform firePoint;    [SerializeField] float timeBetweenShots;    [System.NonSerialized]    public float dashCounter;    private Vector2 moveInput;    private Coroutine shoot;    private float dashCooldownCounter;    private float currentMoveSpeed;    private void Awake()    {        instance = this;        currentMoveSpeed = moveSpeed;    }    private void Update()    {        moveInput.x = Input.GetAxisRaw("Horizontal");        moveInput.y = Input.GetAxisRaw("Vertical");        moveInput.Normalize();        rbody.velocity = moveInput * currentMoveSpeed;        Vector3 mousePos = Input.mousePosition;        Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.localPosition);        if (mousePos.x < screenPos.x)        {            transform.localScale = new Vector3(-1f, 1f, 1f);            gun.localScale = new Vector3(-1f, -1f, 1f);        } else        {            transform.localScale = Vector3.one;            gun.localScale = Vector3.one;        }        // rotate gun        Vector2 offset = new Vector2(mousePos.x - screenPos.x, mousePos.y - screenPos.y);        float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;        gun.rotation = Quaternion.Euler(0, 0, angle);        if (Input.GetMouseButtonDown(0))        {            shoot = StartCoroutine(ShootTimer());        }        if (Input.GetMouseButtonUp(0))        {            StopCoroutine(shoot);        }        // animation        if (moveInput != Vector2.zero)        {            animator.SetBool("isMoving", true);        } else        {            animator.SetBool("isMoving", false);        }        // dashing        if (Input.GetKeyDown(KeyCode.Space))        {            if (dashCooldownCounter <= 0 && dashCounter <= 0)            {                currentMoveSpeed = dashSpeed;                dashCounter = dashTime;                animator.SetTrigger("dashTrigger");                PlayerHealthController.instance.EnableInvincibility(dashTime);            }        }        if (dashCounter > 0)        {            dashCounter -= Time.deltaTime;            if (dashCounter <= 0)            {                currentMoveSpeed = moveSpeed;                dashCooldownCounter = dashCooldown;            }        }        if (dashCooldownCounter > 0)        {            dashCooldownCounter -= Time.deltaTime;        }    }    private IEnumerator ShootTimer()    {        while(true)        {            Instantiate(bullet, firePoint.position, firePoint.rotation);            yield return new WaitForSeconds(timeBetweenShots);        }    }}

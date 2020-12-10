@@ -3,12 +3,11 @@ guid: 3fd1bd137b8f53a4db22b3555a075485
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
-  fontSize: 16
-  forceTextureCase: -2
+  fontSize: 150
+  forceTextureCase: -1
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: PortalnautsDefau
   fontNames:
   - PortalnautsDefau
   fallbackFontReferences: []
